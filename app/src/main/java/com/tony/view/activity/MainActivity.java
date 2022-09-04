@@ -1,4 +1,4 @@
-package com.tony.view;
+package com.tony.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,10 +9,9 @@ import android.os.Bundle;
 import com.tony.R;
 import com.tony.bean.HomeInfo;
 import com.tony.constant.IdConstant;
-import com.tony.view.adapter.HomeAdapter;
+import com.tony.view.activity.adapter.HomeAdapter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {

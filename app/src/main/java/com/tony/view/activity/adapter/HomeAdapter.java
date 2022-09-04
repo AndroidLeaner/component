@@ -1,5 +1,7 @@
-package com.tony.view.adapter;
+package com.tony.view.activity.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tony.bean.HomeInfo;
 import com.tony.constant.IdConstant;
+import com.tony.view.activity.PicDrawColorActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +62,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeAdapterVie
             public void onClick(View view) {
                 switch (homeInfo.id) {
                     case IdConstant.ID_PIC_DRAW_COLOR:
-
+                        Context context = tv.getContext();
+                        context.startActivity(new Intent(context, PicDrawColorActivity.class));
                         break;
 
                 }
