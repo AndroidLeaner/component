@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tony.bean.HomeInfo;
 import com.tony.constant.IdConstant;
+import com.tony.view.activity.DataBaseActivity;
 import com.tony.view.activity.PicDrawColorActivity;
 
 import java.util.ArrayList;
@@ -60,10 +61,13 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeAdapterVie
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Context context = tv.getContext();
                 switch (homeInfo.id) {
                     case IdConstant.ID_PIC_DRAW_COLOR:
-                        Context context = tv.getContext();
                         context.startActivity(new Intent(context, PicDrawColorActivity.class));
+                        break;
+                    case IdConstant.ID_DATA_BASE:
+                        context.startActivity(new Intent(context, DataBaseActivity.class));
                         break;
 
                 }

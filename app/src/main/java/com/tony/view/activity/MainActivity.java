@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import com.tony.R;
 import com.tony.bean.HomeInfo;
 import com.tony.constant.IdConstant;
+import com.tony.db.MyDbHelper;
 import com.tony.view.activity.adapter.HomeAdapter;
 
 import java.util.ArrayList;
@@ -17,7 +19,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private String[] homeContentArray = new String[]{
-            "图片过滤器"
+            "图片过滤器",
+            "数据库"
     };
     private int[] homeIdArray = new int[]{
             IdConstant.ID_PIC_DRAW_COLOR
